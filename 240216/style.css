@@ -1,0 +1,2531 @@
+@import url(./reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Rubik+Bubbles&display=swap");
+
+/* font-family: "Rubik Bubbles", system-ui; */
+/* font-family: "Noto Sans KR", sans-serif; */
+
+/*mouse cursor*/
+.cursor {
+  position: absolute;
+  z-index: 9999;
+}
+/*main*/
+.mainpage {
+  width: 100%;
+  height: 1080px;
+  background: url("./img/main_bg2.jpg") center/cover no-repeat;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 1280px;
+  line-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header span {
+  font-family: "Rubik Bubbles", system-ui;
+  font-size: 24px;
+  color: #ffc700;
+}
+.header span:hover {
+  color: #fff;
+}
+
+.header li a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header li a:hover {
+  color: #ffc700;
+}
+
+.header i {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.header i:hover {
+  color: #ffc700;
+}
+
+.header .gnb {
+  display: flex;
+  gap: 30px;
+}
+
+.trigger {
+  display: none;
+}
+
+.maincontent {
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.maincontent span {
+  font-family: "Rubik Bubbles", system-ui;
+  font-size: 100px;
+  color: #fff;
+}
+
+.maincontent span:nth-child(2) {
+  color: #ffc700;
+}
+
+.maincontent p {
+  margin: 30px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.maincontent .downbutton {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: #ffc700;
+  border-radius: 50px;
+  border: none;
+}
+
+.maincontent .downbutton i {
+  font-size: 30px;
+  color: #fff;
+  line-height: 55px;
+}
+
+/*profile*/
+.profilepage {
+  height: 1800px;
+  background: #000;
+}
+
+.profile-inner-top {
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+
+.profile-inner-top span {
+  font-family: "Rubik Bubbles", system-ui;
+  font-size: 75px;
+  -webkit-text-stroke: 0.2px #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 15px;
+  transition: all 0.3s;
+}
+
+.profile-inner-top span:nth-child(2),
+.profile-inner-top span:nth-child(5) {
+  -webkit-text-stroke: 0.3px #ffc700;
+}
+
+.profile-inner-top span:nth-child(1):hover {
+  -webkit-text-stroke: 0.3px #ffc700;
+}
+.profile-inner-top span:nth-child(2):hover {
+  -webkit-text-stroke: 0.3px #fff;
+}
+.profile-inner-top span:nth-child(3):hover {
+  -webkit-text-stroke: 0.3px #ffc700;
+}
+.profile-inner-top span:nth-child(4):hover {
+  -webkit-text-stroke: 0.3px #ffc700;
+}
+.profile-inner-top span:nth-child(5):hover {
+  -webkit-text-stroke: 0.3px #fff;
+}
+.profile-inner-top span:nth-child(6):hover {
+  -webkit-text-stroke: 0.3px #ffc700;
+}
+
+.profile-inner-title {
+  width: 1280px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.profile-inner-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffc700;
+}
+
+.profile-inner-title p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile-inner-title p span {
+  color: #ffc700;
+}
+
+.profile-inner-content {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.profile-inner-content img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.profile-inner-content img:nth-child(1) {
+  width: 300px;
+  height: 420px;
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+
+.profile-inner-content img:nth-child(2) {
+  border-radius: 400px;
+}
+
+.profile-inner {
+  position: absolute;
+  bottom: 0;
+  left: 1000px;
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+}
+
+.profile-inner h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.profile-inner span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
+.award {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
+
+/*experience*/
+
+.experience-page {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.experience-inner-title {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.experience-inner-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+.experience-inner-title p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+.experience-inner-content {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+.experience-first {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.experience-first img {
+  display: block;
+  border-radius: 400px;
+}
+
+.experience-inner-text {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.experience-inner-text p {
+  color: #666;
+}
+.experience-inner-text p:nth-child(2) {
+  color: #aaa;
+}
+.experience-inner-text span {
+  color: #ffc700;
+}
+.experience-second {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.experience-second .experience-inner-text {
+  text-align: left;
+}
+.experience-second img {
+  border-radius: 200px;
+}
+.experience-third {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.experience-third img {
+  border-radius: 350px;
+  transition: all 0.3s;
+}
+
+.experience-third a:hover img {
+  opacity: 0.5;
+}
+
+.experience-third a:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 5%;
+  left: 24%;
+  font: bold 18px "Noto Sans KR";
+}
+
+/*favorite*/
+
+.favorite-inner-title {
+  width: 1280px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0 auto;
+  padding: 100px 0 120px;
+}
+
+.favorite-inner-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+.favorite-inner-title p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+.favorite-contents {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+.favorite-contents .favorite-rolling-list ul {
+  display: flex;
+}
+
+.favorite-contents .favorite-rolling-list ul li {
+  width: 370px;
+  padding-left: 30px;
+}
+
+.favorite-img img {
+  width: 100%;
+  border-radius: 185px;
+}
+
+ul li:nth-child(3) .favorite-img img {
+  border-radius: 0;
+}
+ul li:nth-child(8) .favorite-img img {
+  border-radius: 0;
+}
+ul li:nth-child(9) .favorite-img img {
+  border-radius: 0;
+}
+ul li:nth-child(14) .favorite-img img {
+  border-radius: 0;
+}
+
+.favorite-rolling-list.original {
+  animation: rolling-original 60s linear infinite;
+}
+
+.favorite-rolling-list.clone {
+  animation: rolling-clone 60s linear infinite;
+}
+
+@keyframes rolling-original {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.01% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rolling-clone {
+  0% {
+    transition: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*project*/
+
+.projectpage {
+  height: 2700px;
+  margin: 0 auto;
+  background: #000;
+}
+
+.project-inner-title {
+  width: 1280px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.project-inner-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.project-inner-title p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.project-inner-content {
+  width: 100%;
+  color: #fff;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.project-inner-content h1 {
+  font-weight: lighter;
+  font-family: "Rubik Bubbles", system-ui;
+  color: #ffc700;
+  font-size: 160px;
+  background-color: #000;
+  position: relative;
+}
+
+.project-inner-content h1::before {
+  content: attr(data-text);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.project-inner-content h1:hover::before {
+  width: 100%;
+}
+
+.project-inner-content h1 span {
+  color: #ffc700;
+  font: bold 30px "Noto Sans KR";
+  display: none;
+}
+
+.project-inner-content h1:hover > span {
+  display: inline;
+}
+.project-inner-content h1:hover + p {
+  display: none;
+}
+
+/* design text out------24.02.09
+.project-inner-content span {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 100px;
+} */
+
+.project-inner-content p {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: right;
+}
+
+/*contact*/
+
+.contactpage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+}
+
+.contactpage h1 {
+  font: 90px "Rubik Bubbles";
+  color: #ffc700;
+  padding-bottom: 50px;
+}
+.contactpage span {
+  color: #000;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.contact-box input {
+  width: 600px;
+  height: 60px;
+  border-radius: 30px;
+  font: bold 18px "Noto Sans KR";
+  color: #666;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.contact-box input:focus {
+  outline: none;
+}
+.contact-box input:nth-child(1),
+.contact-box input:nth-child(2) {
+  padding-left: 30px;
+  color: #aaa;
+}
+.contact-box input .contact-btn {
+  background: #ddd;
+}
+
+.contact-box img {
+  width: 260px;
+  padding-bottom: 340px;
+}
+
+.gotop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+}
+
+.gotop span {
+  font: bold 18px "Noto Sans KR";
+  padding-top: 10px;
+}
+
+.gotop-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  background: #ffc700;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.gotop-btn i {
+  font-size: 20px;
+  color: #fff;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 470px;
+  background: #ddd;
+  position: relative;
+}
+
+.footer {
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.footer .logo {
+  font: lighter 65px "Rubik Bubbles";
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font: bold 18px "Noto Sans KR";
+  color: #666;
+}
+
+.footer .footer-content p {
+  padding-bottom: 20px;
+}
+
+.footer .footer-content p:nth-child(2) {
+  color: #aaa;
+}
+
+.footer .footer-content li {
+  float: right;
+  padding-left: 30px;
+  color: #000;
+}
+
+@media screen and (max-width: 1279px) {
+  /*main*/
+  .mainpage {
+    width: 100%;
+    height: 1080px;
+    background: url("./img/main_bg2.jpg") center/cover no-repeat;
+  }
+
+  header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 90%;
+    line-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .header span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 24px;
+    color: #ffc700;
+  }
+  .header span:hover {
+    color: #fff;
+  }
+
+  .header li a {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .header li a:hover {
+    color: #ffc700;
+  }
+
+  .header i {
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .header i:hover {
+    color: #ffc700;
+  }
+
+  .header .gnb {
+    display: flex;
+    gap: 30px;
+  }
+
+  .maincontent {
+    height: 700px;
+    margin-left: 10%;
+  }
+
+  .maincontent span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 90px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent span:nth-child(2) {
+    color: #ffc700;
+  }
+
+  .maincontent p {
+    margin: 10px 5px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent .downbutton {
+    display: none;
+  }
+
+  /*profile*/
+  .profilepage {
+    height: 1800px;
+    background: #000;
+  }
+
+  .profile-inner-top {
+    margin-bottom: 90px;
+    overflow: hidden;
+  }
+
+  .profile-inner-top span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 75px;
+    -webkit-text-stroke: 0.2px #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 15px;
+    transition: all 0.3s;
+  }
+
+  .profile-inner-top span:nth-child(2),
+  .profile-inner-top span:nth-child(5) {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+
+  .profile-inner-top span:nth-child(1):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(2):hover {
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  .profile-inner-top span:nth-child(3):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(4):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(5):hover {
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  .profile-inner-top span:nth-child(6):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+
+  .profile-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .profile-inner-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffc700;
+  }
+
+  .profile-inner-title p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .profile-inner-title p span {
+    color: #ffc700;
+  }
+
+  .profile-inner-content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+
+  .profile-inner-content img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .profile-inner-content img:nth-child(1) {
+    width: 280px;
+    height: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .profile-inner-content img:nth-child(2) {
+    border-radius: 400px;
+  }
+
+  .profile-inner {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .profile-inner h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .profile-inner span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    padding-bottom: 10px;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-top: 5px;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-top: 5px;
+  }
+  .award {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-top: 5px;
+  }
+
+  /*experience*/
+
+  .experience-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .experience-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .experience-inner-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .experience-inner-title p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .experience-inner-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  .experience-first {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+  }
+  .experience-first img {
+    border-radius: 400px;
+    padding-bottom: 20px;
+  }
+
+  .experience-first::after {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .experience-inner-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .experience-inner-text p {
+    font-size: 14px;
+    color: #666;
+  }
+  .experience-inner-text p:nth-child(2) {
+    color: #aaa;
+  }
+  .experience-inner-text span {
+    color: #ffc700;
+  }
+  .experience-second {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+  }
+  .experience-second .experience-inner-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .experience-second img {
+    border-radius: 200px;
+  }
+  .experience-second::after {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .experience-third {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+  }
+  .experience-third img {
+    border-radius: 350px;
+    margin-bottom: 20px;
+  }
+
+  .experience-third a::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    font: bold 18px "Noto Sans KR";
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+  }
+
+  /*favorite*/
+
+  .favorite-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding: 100px 0 120px;
+  }
+
+  .favorite-inner-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .favorite-inner-title p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .favorite-contents {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 150px;
+  }
+
+  .favorite-contents .favorite-rolling-list ul {
+    display: flex;
+  }
+
+  .favorite-contents .favorite-rolling-list ul li {
+    width: 370px;
+    padding-left: 30px;
+  }
+
+  .favorite-img img {
+    width: 100%;
+    border-radius: 185px;
+  }
+
+  ul li:nth-child(3) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(8) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(9) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(14) .favorite-img img {
+    border-radius: 0;
+  }
+
+  .favorite-rolling-list.original {
+    animation: rolling-original 60s linear infinite;
+  }
+
+  .favorite-rolling-list.clone {
+    animation: rolling-clone 60s linear infinite;
+  }
+
+  @keyframes rolling-original {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    50.01% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rolling-clone {
+    0% {
+      transition: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  /*project*/
+
+  .projectpage {
+    width: 100%;
+    height: 2300px;
+    margin: 0 auto;
+    background: #000;
+  }
+
+  .project-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .project-inner-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .project-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .project-inner-content {
+    width: 90%;
+    color: #fff;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  .project-inner-content h1 {
+    font-weight: lighter;
+    font-family: "Rubik Bubbles", system-ui;
+    color: #ffc700;
+    font-size: 100px;
+    background-color: #000;
+    position: relative;
+  }
+
+  .project-inner-content h1:hover > span {
+    display: none;
+  }
+  .project-inner-content h1:hover + p {
+    display: block;
+  }
+
+  .project-inner-content p {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /*contact*/
+
+  .contactpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  .contactpage h1 {
+    font: 55px "Rubik Bubbles";
+    color: #ffc700;
+    padding-bottom: 50px;
+  }
+  .contactpage span {
+    color: #000;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .contact-box input {
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .contact-box input:focus {
+    outline: none;
+  }
+  .contact-box input:nth-child(1),
+  .contact-box input:nth-child(2) {
+    padding-left: 20px;
+    color: #aaa;
+  }
+  .contact-box input .contact-btn {
+    background: #ddd;
+  }
+
+  .contact-box img {
+    width: 80px;
+    padding-bottom: 340px;
+  }
+
+  .gotop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+  }
+
+  .gotop span {
+    font: bold 14px "Noto Sans KR";
+    padding-top: 10px;
+  }
+
+  .gotop-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background: #ffc700;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  .gotop-btn i {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100%;
+    height: 470px;
+    background: #ddd;
+    position: relative;
+  }
+
+  .footer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+  }
+
+  .footer .logo {
+    font: lighter 30px "Rubik Bubbles";
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+  }
+
+  .footer .footer-content p {
+    padding-bottom: 20px;
+  }
+
+  .footer .footer-content p:nth-child(2) {
+    color: #aaa;
+  }
+
+  .footer .footer-content li {
+    float: right;
+    padding-left: 30px;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  /*mouse cursor*/
+  .cursor {
+    display: none;
+  }
+  /*main*/
+  .mainpage {
+    width: 100%;
+    height: 800px;
+    background: url("./img/main_bg2.jpg") center/cover no-repeat;
+  }
+
+  header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 90%;
+    line-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .header span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 24px;
+    color: #ffc700;
+  }
+  .header span:hover {
+    color: #fff;
+  }
+
+  .header ul li a {
+    display: none;
+  }
+
+  .header li a:hover {
+    color: #ffc700;
+  }
+
+  .header i {
+    display: none;
+  }
+
+  .maincontent {
+    height: 700px;
+    margin-left: 10%;
+  }
+
+  .maincontent span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 70px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent span:nth-child(2) {
+    color: #ffc700;
+  }
+
+  .maincontent p {
+    margin: 10px 5px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent .downbutton {
+    display: none;
+  }
+
+  /*profile*/
+  .profilepage {
+    width: 100%;
+    height: 1500px;
+    background: #000;
+  }
+
+  .profile-inner-top {
+    margin-bottom: 90px;
+    overflow: hidden;
+  }
+
+  .profile-inner-top span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 75px;
+    -webkit-text-stroke: 0.2px #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 15px;
+    transition: all 0.3s;
+  }
+
+  .profile-inner-top span:nth-child(2),
+  .profile-inner-top span:nth-child(5) {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+
+  .profile-inner-top span:nth-child(1):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(2):hover {
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  .profile-inner-top span:nth-child(3):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(4):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+  .profile-inner-top span:nth-child(5):hover {
+    -webkit-text-stroke: 0.3px #fff;
+  }
+  .profile-inner-top span:nth-child(6):hover {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+
+  .profile-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .profile-inner-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffc700;
+  }
+
+  .profile-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .profile-inner-title p span {
+    color: #ffc700;
+  }
+
+  .profile-inner-content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+
+  .profile-inner-content img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .profile-inner-content img:nth-child(1) {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .profile-inner-content img:nth-child(2) {
+    border-radius: 400px;
+  }
+
+  .profile-inner {
+    width: 190px;
+    position: absolute;
+    bottom: -5%;
+    left: 75%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .profile-inner h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .profile-inner span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    padding-bottom: 10px;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+  .award {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  /*experience*/
+
+  .experience-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .experience-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .experience-inner-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .experience-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .experience-inner-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  .experience-first {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .experience-first img {
+    border-radius: 400px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .experience-first::after {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .experience-inner-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .experience-inner-text p {
+    font-size: 14px;
+    color: #666;
+  }
+  .experience-inner-text p:nth-child(2) {
+    color: #aaa;
+  }
+  .experience-inner-text span {
+    color: #ffc700;
+  }
+  .experience-second {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .experience-second .experience-inner-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .experience-second img {
+    border-radius: 200px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .experience-second::after {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .experience-third {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+  }
+  .experience-third img {
+    border-radius: 350px;
+    width: 80%;
+  }
+  .experience-third a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-third a:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    font: bold 18px "Noto Sans KR";
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+  }
+
+  /*favorite*/
+
+  .favorite-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+  }
+
+  .favorite-inner-title h2 {
+    font-size: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .favorite-inner-title p {
+    margin-top: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .favorite-contents {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .favorite-contents .favorite-rolling-list ul {
+    display: flex;
+  }
+
+  .favorite-contents .favorite-rolling-list ul li {
+    width: 300px;
+    padding-left: 30px;
+  }
+
+  .favorite-img img {
+    width: 100%;
+    border-radius: 185px;
+  }
+
+  ul li:nth-child(3) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(8) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(9) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(14) .favorite-img img {
+    border-radius: 0;
+  }
+
+  .favorite-rolling-list.original {
+    animation: rolling-original 60s linear infinite;
+  }
+
+  .favorite-rolling-list.clone {
+    animation: rolling-clone 60s linear infinite;
+  }
+
+  @keyframes rolling-original {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    50.01% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rolling-clone {
+    0% {
+      transition: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  /*project*/
+
+  .projectpage {
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    background: #000;
+  }
+
+  .project-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .project-inner-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .project-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .project-inner-content {
+    width: 90%;
+    color: #fff;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  .project-inner-content h1 {
+    font-weight: lighter;
+    font-family: "Rubik Bubbles", system-ui;
+    color: #ffc700;
+    font-size: 90px;
+    background-color: #000;
+  }
+
+  .project-inner-content h1:hover > span {
+    display: none;
+  }
+  .project-inner-content h1:hover + p {
+    display: block;
+  }
+
+  .project-inner-content p {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /*contact*/
+
+  .contactpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  .contactpage h1 {
+    font: 55px "Rubik Bubbles";
+    color: #ffc700;
+    padding-bottom: 50px;
+  }
+  .contactpage span {
+    color: #000;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .contact-box input {
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .contact-box input:focus {
+    outline: none;
+  }
+  .contact-box input:nth-child(1),
+  .contact-box input:nth-child(2) {
+    padding-left: 20px;
+    color: #aaa;
+  }
+  .contact-box input .contact-btn {
+    background: #ddd;
+  }
+
+  .contact-box img {
+    width: 80px;
+    padding-bottom: 340px;
+  }
+
+  .gotop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+  }
+
+  .gotop span {
+    font: bold 14px "Noto Sans KR";
+    padding-top: 10px;
+  }
+
+  .gotop-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background: #ffc700;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  .gotop-btn i {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100%;
+    height: 470px;
+    background: #000;
+  }
+
+  .footer {
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .footer .logo {
+    font: lighter 18px "Rubik Bubbles";
+    color: #ffc700;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+
+  .footer .footer-content {
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+  }
+
+  .footer .footer-content p {
+    padding-bottom: 20px;
+  }
+
+  .footer .footer-content p:nth-child(2) {
+    color: #aaa;
+  }
+
+  .footer .footer-content li {
+    float: right;
+    padding-left: 30px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*mouse cursor*/
+  .cursor {
+    display: none;
+  }
+  /*main*/
+  .mainpage {
+    width: 100%;
+    height: 800px;
+    background: url("./img/main_bg2.jpg") center/cover no-repeat;
+  }
+
+  header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 90%;
+    line-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .header span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 18px;
+    color: #ffc700;
+  }
+  .header span:hover {
+    color: #fff;
+  }
+
+  .header ul li a {
+    display: none;
+  }
+
+  .header li a:hover {
+    color: #ffc700;
+  }
+
+  .header i {
+    display: none;
+  }
+
+  .maincontent {
+    height: 500px;
+    margin-left: 10%;
+  }
+
+  .maincontent span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent span:nth-child(2) {
+    color: #ffc700;
+  }
+
+  .maincontent p {
+    margin: 10px 5px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .maincontent .downbutton {
+    display: none;
+  }
+
+  /*profile*/
+  .profilepage {
+    width: 100%;
+    height: auto;
+    background: #000;
+  }
+
+  .profile-inner-top {
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+
+  .profile-inner-top span {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 75px;
+    -webkit-text-stroke: 0.2px #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .profile-inner-top span:nth-child(2),
+  .profile-inner-top span:nth-child(5) {
+    -webkit-text-stroke: 0.3px #ffc700;
+  }
+
+  .profile-inner-title {
+    width: 75%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .profile-inner-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc700;
+  }
+
+  .profile-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .profile-inner-title p br {
+    display: none;
+  }
+
+  .profile-inner-title p span {
+    color: #ffc700;
+  }
+
+  .profile-inner-content {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .profile-inner-content img {
+    margin-bottom: 30px;
+  }
+
+  .profile-inner-content img:nth-child(1) {
+    width: 220px;
+    height: 290px;
+    position: static;
+  }
+
+  .profile-inner-content img:nth-child(2) {
+    display: none;
+  }
+
+  .profile-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  .profile-inner h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .profile-inner span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    padding-bottom: 10px;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .aboutme h3 {
+    color: #ffc700;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+  .education h3 {
+    color: #ffc700;
+  }
+  .award {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .award h3 {
+    color: #ffc700;
+  }
+
+  /*experience*/
+
+  .experience-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .experience-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .experience-inner-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .experience-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .experience-inner-content {
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  .experience-first {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .experience-first img {
+    display: block;
+  }
+
+  .experience-first::after {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -50px;
+  }
+  .experience-inner-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+  }
+  .experience-inner-text p {
+    display: none;
+    font-size: 14px;
+    color: #666;
+  }
+  .experience-inner-text p:nth-child(1) {
+    display: none;
+  }
+
+  .experience-inner-text p:nth-child(2) {
+    display: block;
+    color: #aaa;
+  }
+  .experience-inner-text span {
+    color: #ffc700;
+  }
+  .experience-second {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .experience-second .experience-inner-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .experience-second img {
+    border-radius: 200px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .experience-second::after {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: #ffc700;
+    position: absolute;
+    bottom: -50px;
+  }
+  .experience-third {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: relative;
+  }
+  .experience-third img {
+    border-radius: 350px;
+    width: 80%;
+  }
+  .experience-third a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-third a::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    font: bold 14px "Noto Sans KR";
+    background: #ffc700;
+    color: #fff;
+    border-radius: 50px;
+  }
+
+  /*favorite*/
+
+  .favorite-inner-title {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .favorite-inner-title h2 {
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .favorite-inner-title p {
+    margin-top: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .favorite-contents {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .favorite-contents .favorite-rolling-list ul {
+    display: flex;
+  }
+
+  .favorite-contents .favorite-rolling-list ul li {
+    width: 300px;
+    padding-left: 30px;
+  }
+
+  .favorite-img img {
+    width: 100%;
+    border-radius: 185px;
+  }
+
+  ul li:nth-child(3) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(8) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(9) .favorite-img img {
+    border-radius: 0;
+  }
+  ul li:nth-child(14) .favorite-img img {
+    border-radius: 0;
+  }
+
+  .favorite-rolling-list.original {
+    animation: rolling-original 60s linear infinite;
+  }
+
+  .favorite-rolling-list.clone {
+    animation: rolling-clone 60s linear infinite;
+  }
+
+  @keyframes rolling-original {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    50.01% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rolling-clone {
+    0% {
+      transition: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  /*project*/
+
+  .projectpage {
+    width: 100%;
+    height: 800px;
+    background: #000;
+  }
+
+  .project-inner-title {
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .project-inner-title h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .project-inner-title p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .project-inner-content {
+    width: 90%;
+    margin: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-inner-content h1 {
+    font-weight: lighter;
+    font-family: "Rubik Bubbles", system-ui;
+    color: #ffc700;
+    font-size: 40px;
+  }
+
+  .project-inner-content h1 > span {
+    display: block;
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+  }
+  .project-inner-content h1:hover + p {
+    display: none;
+  }
+
+  .project-inner-content p {
+    display: none;
+  }
+
+  /*contact*/
+
+  .contactpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .contactpage h1 {
+    font: 35px "Rubik Bubbles";
+    color: #ffc700;
+    padding-bottom: 20px;
+  }
+
+  .contactpage span {
+    color: #000;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-box input {
+    width: 250px;
+    height: 35px;
+    border-radius: 25px;
+    font: bold 14px "Noto Sans KR";
+    color: #666;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+  }
+  .contact-box input:focus {
+    outline: none;
+  }
+  .contact-box input:nth-child(1),
+  .contact-box input:nth-child(2) {
+    padding-left: 20px;
+    color: #aaa;
+  }
+  .contact-box input .contact-btn {
+    background: #ddd;
+  }
+
+  .contactpage img {
+    width: 50%;
+  }
+
+  .gotop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+  }
+
+  .gotop span {
+    font: bold 14px "Noto Sans KR";
+    padding-top: 10px;
+  }
+
+  .gotop-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background: #ffc700;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  .gotop-btn i {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100%;
+    height: 470px;
+    background: #000;
+  }
+
+  .footer {
+    width: 70%;
+    cursor: pointer;
+  }
+
+  .footer .logo {
+    display: none;
+  }
+
+  .footer .footer-content {
+    font: bold 14px "Noto Sans KR";
+    color: #aaa;
+  }
+
+  .footer .footer-content p {
+    padding-bottom: 20px;
+  }
+
+  .footer .footer-content p br {
+    display: none;
+  }
+
+  .footer .footer-content p:nth-child(2) {
+    color: #666;
+    letter-spacing: -0.5px;
+  }
+
+  .footer .footer-content li {
+    float: right;
+    padding-left: 10px;
+    color: #ffc700;
+  }
+}

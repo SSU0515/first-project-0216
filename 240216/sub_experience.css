@@ -1,0 +1,159 @@
+@import url("./reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Rubik+Bubbles&display=swap");
+
+/* font-family: "Rubik Bubbles", system-ui; */
+/* font-family: "Noto Sans KR", sans-serif; */
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.header a i {
+  font-size: 30px;
+  padding: 0 20px;
+  margin-left: 200px;
+  float: left;
+  line-height: 100px;
+}
+
+.header span {
+  font: 50px "Rubik Bubbles";
+  color: #ffc700;
+  margin-left: 20px;
+  line-height: 100px;
+}
+.content {
+  margin-bottom: 35px;
+}
+.content img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.text {
+  margin-left: 200px;
+}
+
+.text h2 {
+  font: bold 30px "Noto Sans KR";
+  padding-bottom: 10px;
+}
+
+.text p {
+  font: medium 14px "Noto Sans KR";
+  padding-bottom: 35px;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .header a i {
+    font-size: 30px;
+    padding: 0 20px;
+    margin-left: 20px;
+    float: left;
+    line-height: 100px;
+  }
+
+  .header span {
+    font: 40px "Rubik Bubbles";
+    color: #ffc700;
+    margin-left: 20px;
+    line-height: 100px;
+  }
+  .content {
+    margin-bottom: 35px;
+  }
+  .content img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .text {
+    margin: 20px;
+  }
+
+  .text h2 {
+    font: bold 24px "Noto Sans KR";
+    padding-bottom: 10px;
+  }
+
+  .text p {
+    font: medium 14px "Noto Sans KR";
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .header a i {
+    font-size: 30px;
+    padding: 0 20px;
+    margin-left: 10px;
+    float: left;
+    line-height: 100px;
+  }
+
+  .header span {
+    font: 30px "Rubik Bubbles";
+    color: #ffc700;
+    margin-left: 5px;
+    line-height: 100px;
+  }
+  .content {
+    margin-bottom: 35px;
+  }
+  .content img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .text {
+    margin: 10px;
+  }
+
+  .text h2 {
+    font: bold 20px "Noto Sans KR";
+    padding-bottom: 10px;
+  }
+
+  .text p {
+    font: medium 14px "Noto Sans KR";
+    padding-bottom: 35px;
+    letter-spacing: -0.5px;
+  }
+
+  .text p br {
+    display: none;
+  }
+}
